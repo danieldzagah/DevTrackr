@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #3b4655;
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/468/621/small/abstract-digital-technology-background-with-concept-security-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(31, 41, 55, 0.7); /* Dark overlay for readability */
+}
+
+.main {
+  flex: 1;
+  padding: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-form {
+  /* background-color: rgb(255, 255, 255); */
+  padding: 10px 100px 25px 100px;
+  margin: 0 auto;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow:20px 20px 50px 15px rgb(2, 136, 226);;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap between form elements */
+}
+
+.form-group {
+  margin-bottom: 10px; /* Reduced from 20px to decrease gaps between inputs */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #a5b4fc;
+}
+
+.projectname {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid #d1d5db; 
+}
+
+.projectname:focus {
+  outline: none;
+  border: 2px solid #1f2937; /* Highlight color on focus */
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1f293741;
+}
+
+.toggle-password:hover {
+  color: #062efa;
+}
+
+.toggle-password i {
+  font-size: 18px;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.forgot-link,
+.signup-link {
+  color: hsl(0, 0%, 2%);
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.forgot-link a,
+.signup-link a {
+  color: hsl(202, 100%, 50%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-link a:hover,
+.signup-link a:hover {
+  color: #031c5c;
+}
+
+.submit {
+  padding: 2%;
+  margin: auto;
+  font-weight: bold;
+  font-size: large;
+  font-style: italic;
+  transition: transform 300ms;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #6562ba;
+  color: #ffffff;
+  border: none;
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    overflow: hidden;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/468/621/small/abstract-digital-technology-background-with-concept-security-vector.jpg'); /* Ensure background image for mobile */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(31, 41, 55, 0.7); /* Reapply overlay for safety */
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .project-form {
+    padding: 50px;
+    max-width: 100%;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  
+
+  .signup-link {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-container {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/014/468/621/small/abstract-digital-technology-background-with-concept-security-vector.jpg'); /* Optimized for tablet */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(31, 41, 55, 0.7);
+  }
+}
+.login {
+    color: #a5b4fc;
+    text-align: center;
+  }
